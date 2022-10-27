@@ -1,0 +1,34 @@
+class Products
+{
+    ##Atributos##
+    price= #precio del producto
+    product_name= #nombre de producto
+    kind_of_drink= #el tipo de trago 
+    type_of_ice= #el tipo de hielo 
+    barcode= #codigo de barra del producto
+    expiration_date= #fecha de vencimiento del producto
+    alcohol_grade= #grado de alcohol del producto
+    quantity= #cantidad total del producto
+    date_of_elaboration= #fecha de elaboracion del producto
+    stock critico del almacen
+    stock 
+}   
+class Client
+{
+    client_id= #identificacion del cliente(carnet) para saber si es mayor de edad
+    payment= #pago total del cliente
+    payment_method= #metodo de pago del cliente
+    
+    
+    
+    
+    
+    
+    ##Fin seccion Atributos##
+    
+    ##Metodos(funcion)##
+    stock_replenishment(int newstock) #reposicion de stock del almacen
+}
+    
+ 
+    ##Fin seccion Metodos##
