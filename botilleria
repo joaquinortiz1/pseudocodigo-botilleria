@@ -4,9 +4,7 @@ class Products
     price= #precio del producto
     product_name= #nombre de producto
     kind_of_drink= #el tipo de trago 
-    type_of_ice= #el tipo de hielo 
     barcode= #codigo de barra del producto
-    date_of_elaboration= #fecha de elaboracion del producto
     expiration_date= #fecha de vencimiento del producto
     alcohol_grade= #grado de alcohol del producto
     quantity= #cantidad total del producto
@@ -29,6 +27,8 @@ class Client
     ##Metodos(funcion)##
 {   
     open_booties(open) #abrir la botilleria
+    expired_products(remove) #retirar productos vencidos
+    booty_cleaning(clean) #limpeza de botilleria
     collect_payment(collect) #cobrar al cliente
     give_change(change) #dar el cambio al cliente
     serve_customers(service) #atender al cliente
