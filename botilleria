@@ -6,29 +6,34 @@ class Products
     kind_of_drink= #el tipo de trago 
     type_of_ice= #el tipo de hielo 
     barcode= #codigo de barra del producto
+    date_of_elaboration= #fecha de elaboracion del producto
     expiration_date= #fecha de vencimiento del producto
     alcohol_grade= #grado de alcohol del producto
     quantity= #cantidad total del producto
-    date_of_elaboration= #fecha de elaboracion del producto
-    stock critico del almacen
-    stock 
+    critical_storage= #cantidad critica del almacen
+    maximum_quantity_of_the_store= #cantidad maxima de el almacen
 }   
 class Client
 {
-    client_id= #identificacion del cliente(carnet) para saber si es mayor de edad
+    ##Atributos##
+    client_age= #edad del cliente
+    client_id= #identificacion del cliente (rut)
+    birthday= #fecha de nacimiento
+    ticket= #boleta de cliente emitida true o false
     payment= #pago total del cliente
     payment_method= #metodo de pago del cliente
     
-    
-    
-    
-    
-    
+ }   
     ##Fin seccion Atributos##
     
     ##Metodos(funcion)##
-    stock_replenishment(int newstock) #reposicion de stock del almacen
-}
-    
- 
+{   
+    open_booties(open) #abrir la botilleria
+    collect_payment(collect) #cobrar al cliente
+    give_change(change) #dar el cambio al cliente
+    serve_customers(service) #atender al cliente
+    stock_replenishment(newstock) #reposicion de stock del almacen
+    close_booties(close) #cerrar la botilleria
+
+}   
     ##Fin seccion Metodos##
